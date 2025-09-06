@@ -1,0 +1,147 @@
+.link-manager {
+  width: 100%;
+}
+
+.link-form {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.inputs-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.link-input {
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.link-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(131, 58, 180, 0.2);
+}
+
+.icon-picker-container h4 {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.icon-option {
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.icon-option:hover {
+  background-color: #e0e0e0;
+}
+
+.icon-option.selected {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border-color: var(--accent-color);
+}
+
+.add-link-button {
+  width: 100%;
+  border: none;
+  background: linear-gradient(45deg, #28a745, #218838);
+  color: white;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.add-link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+/* Link List Styles */
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.link-item {
+  position: relative;
+}
+
+.link-item a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--background-light);
+  padding: 15px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.link-item a:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 16px var(--shadow-color);
+}
+
+.link-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.remove-link-button {
+  /* Same style as before, it works well */
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.link-item:hover .remove-link-button {
+  opacity: 1;
+}

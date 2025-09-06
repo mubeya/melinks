@@ -1,0 +1,123 @@
+/* ... (previous styles can be removed or adapted) ... */
+.homepage-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  background-color: var(--background-light);
+  padding: 40px 60px;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.homepage-main {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.content-section {
+  flex: 1;
+}
+
+.content-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.features-list svg {
+  color: var(--primary-color);
+}
+
+.login-area {
+  margin-top: 20px;
+}
+
+/* VISUAL SECTION */
+.visual-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-mockup {
+  width: 300px;
+  height: 600px;
+  background: #111;
+  border-radius: 40px;
+  padding: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: float 5s ease-in-out infinite;
+}
+
+.phone-screen {
+  background: #f0f2f5;
+  height: 93%;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mock-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.mock-username {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.mock-link {
+  width: 100%;
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ... (other styles like buttons can be reused) ... */

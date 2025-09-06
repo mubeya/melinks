@@ -1,0 +1,96 @@
+.settings-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  outline: none;
+}
+
+.settings-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.settings-section {
+  margin-bottom: 25px;
+}
+
+.settings-section h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.language-options button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: all 0.2s;
+}
+
+.language-options button.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.theme-options {
+  display: flex;
+  gap: 15px;
+}
+
+.theme-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.theme-swatch:hover {
+  transform: scale(1.1);
+}
+
+.theme-swatch.active {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary-color);
+}

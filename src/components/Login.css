@@ -1,0 +1,28 @@
+/* src/components/Login.css */
+
+.custom-google-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.custom-google-button:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-google-button span {
+  line-height: 1;
+}
